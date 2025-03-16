@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		844D26252D875AE100209CA7 /* CxjParallaxScrollCollection in Frameworks */ = {isa = PBXBuildFile; productRef = 844D26242D875AE100209CA7 /* CxjParallaxScrollCollection */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		844D25FB2D8759F700209CA7 /* CxjParallaxScrollCollectionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CxjParallaxScrollCollectionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844D26252D875AE100209CA7 /* CxjParallaxScrollCollection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = CxjParallaxScrollCollectionExample;
 			packageProductDependencies = (
+				844D26242D875AE100209CA7 /* CxjParallaxScrollCollection */,
 			);
 			productName = CxjParallaxScrollCollectionExample;
 			productReference = 844D25FB2D8759F700209CA7 /* CxjParallaxScrollCollectionExample.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 844D25F22D8759F700209CA7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				844D26232D875AE100209CA7 /* XCLocalSwiftPackageReference "../CxjParallaxScrollCollection" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 844D25FC2D8759F700209CA7 /* Products */;
 			projectDirPath = "";
@@ -153,6 +162,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -181,6 +191,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +346,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		844D26232D875AE100209CA7 /* XCLocalSwiftPackageReference "../CxjParallaxScrollCollection" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../CxjParallaxScrollCollection;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		844D26242D875AE100209CA7 /* CxjParallaxScrollCollection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CxjParallaxScrollCollection;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 844D25F32D8759F700209CA7 /* Project object */;
 }
