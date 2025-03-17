@@ -11,6 +11,9 @@ import CxjParallaxScrollCollection
 final class TransportCell: BounceOnTouchCollectionViewCell, CxjParallaxScrollCollection.ContentCell {
 	private let label = UILabel()
 	
+	override var scaleOnTouch: CGFloat { 0.95 }
+	override var alphaOnTouch: CGFloat { 0.95 }
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
@@ -29,15 +32,13 @@ final class TransportCell: BounceOnTouchCollectionViewCell, CxjParallaxScrollCol
 		])
 	}
 	
-	required init?(coder: NSCoder) { fatalError() }
+	required init?(coder: NSCoder) {
+		fatalError()
+	}
 
 	func configureWithModel(_ cellModel: any CxjParallaxScrollCollection.CellModel) {
-		guard let cellModel = cellModel as? TransportCellModel else { return }
+		guard let model = cellModel as? TransportCellModel else { return }
 		
-		configureFor(model: cellModel)
-	}
-	
-	func configureFor(model: TransportCellModel) {
 		label.font = model.titleFont
 		label.text = model.titleRepresentation
 		contentView.backgroundColor = model.backgroundColor

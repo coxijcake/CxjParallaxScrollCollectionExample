@@ -98,7 +98,16 @@ extension HashtagsViewController: CxjParallaxScrollCollection.Delegate {
 			selectedTags.insert(hashtag)
 		}
 		
-		hashtagsVC.reconfigureItemAtIndexPath(indexPath)
+		let action: (() -> Void) = {
+			self.hashtagsVC.reconfigureItemAtIndexPath(indexPath)
+		}
+		
+		UIView.animate(
+			withDuration: 0.25,
+			delay: .zero,
+			options: [.beginFromCurrentState, .curveEaseOut, .allowUserInteraction],
+			animations: action
+		)
 	}
 }
 

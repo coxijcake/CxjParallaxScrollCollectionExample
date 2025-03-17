@@ -12,6 +12,9 @@ import CxjParallaxScrollCollection
 final class FoodiesCell: BounceOnTouchCollectionViewCell, CxjParallaxScrollCollection.ContentCell {
 	private let label = UILabel()
 	
+	override var scaleOnTouch: CGFloat { 0.95 }
+	override var alphaOnTouch: CGFloat { 0.975 }
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
