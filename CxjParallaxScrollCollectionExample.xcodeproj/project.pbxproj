@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841EA4A32D88C1F900619D3E /* CxjParallaxScrollCollection in Frameworks */ = {isa = PBXBuildFile; productRef = 841EA4A22D88C1F900619D3E /* CxjParallaxScrollCollection */; };
 		844D26252D875AE100209CA7 /* CxjParallaxScrollCollection in Frameworks */ = {isa = PBXBuildFile; productRef = 844D26242D875AE100209CA7 /* CxjParallaxScrollCollection */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841EA4A32D88C1F900619D3E /* CxjParallaxScrollCollection in Frameworks */,
 				844D26252D875AE100209CA7 /* CxjParallaxScrollCollection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = CxjParallaxScrollCollectionExample;
 			packageProductDependencies = (
 				844D26242D875AE100209CA7 /* CxjParallaxScrollCollection */,
+				841EA4A22D88C1F900619D3E /* CxjParallaxScrollCollection */,
 			);
 			productName = CxjParallaxScrollCollectionExample;
 			productReference = 844D25FB2D8759F700209CA7 /* CxjParallaxScrollCollectionExample.app */;
@@ -114,7 +117,7 @@
 			mainGroup = 844D25F22D8759F700209CA7;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				844D26232D875AE100209CA7 /* XCLocalSwiftPackageReference "../CxjParallaxScrollCollection" */,
+				841EA4A12D88C1F900619D3E /* XCRemoteSwiftPackageReference "CxjParallaxScrollCollection" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 844D25FC2D8759F700209CA7 /* Products */;
@@ -347,14 +350,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		844D26232D875AE100209CA7 /* XCLocalSwiftPackageReference "../CxjParallaxScrollCollection" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../CxjParallaxScrollCollection;
+/* Begin XCRemoteSwiftPackageReference section */
+		841EA4A12D88C1F900619D3E /* XCRemoteSwiftPackageReference "CxjParallaxScrollCollection" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/coxijcake/CxjParallaxScrollCollection";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		841EA4A22D88C1F900619D3E /* CxjParallaxScrollCollection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 841EA4A12D88C1F900619D3E /* XCRemoteSwiftPackageReference "CxjParallaxScrollCollection" */;
+			productName = CxjParallaxScrollCollection;
+		};
 		844D26242D875AE100209CA7 /* CxjParallaxScrollCollection */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CxjParallaxScrollCollection;

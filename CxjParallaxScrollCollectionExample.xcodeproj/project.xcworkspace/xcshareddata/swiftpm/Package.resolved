@@ -1,0 +1,15 @@
+{
+  "originHash" : "8a1e59378da430ea29f932c30b4314d73ce368829b86ee2d2981272149f16a6a",
+  "pins" : [
+    {
+      "identity" : "cxjparallaxscrollcollection",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/coxijcake/CxjParallaxScrollCollection",
+      "state" : {
+        "revision" : "ff0d653ca26120e680f9f588b67b4cedd359f1e2",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
