@@ -15,7 +15,7 @@ final class FoodiesViewController: UIViewController {
 	private let itemsVCPlaceholderView: UIView = .init()
 	
 	private lazy var itemsVC: CxjParallaxScrollCollection.ViewController = {
-		CxjParallaxViewControllerAssembler.vcWith(
+		CxjParallaxViewControllerAssembler.assembleWith(
 			layout: .init(
 				sectionHeight: 40,
 				interSectionSpacing: 10,
@@ -97,10 +97,10 @@ private extension FoodiesViewController {
 				FoodCellModel(title: "Pizza", emoji: "🍕"),
 				FoodCellModel(title: "Burger", emoji: "🍔"),
 				FoodCellModel(title: "Fries", emoji: "🍟"),
-				FoodCellModel(title: "Ice Cream", emoji: "🍨"),
 				FoodCellModel(title: "Sushi", emoji: "🍣"),
 				FoodCellModel(title: "Hot Dog", emoji: "🌭"),
-				FoodCellModel(title: "Taco", emoji: "🌮")
+				FoodCellModel(title: "Taco", emoji: "🌮"),
+				FoodCellModel(title: "Ice Cream", emoji: "🍨")
 			],
 			[
 				DrinkCellModel(title: "Coffee", emoji: "☕️"),

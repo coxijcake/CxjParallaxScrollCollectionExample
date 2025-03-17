@@ -19,7 +19,7 @@ final class TransportsViewController: UIViewController {
 	
 	//MARK: - Childs
 	private lazy var transportsVC: CxjParallaxScrollCollection.ViewController = {
-		CxjParallaxViewControllerAssembler.vcWith(
+		CxjParallaxViewControllerAssembler.assembleWith(
 			layout: .init(
 				sectionHeight: 40,
 				interSectionSpacing: 10,

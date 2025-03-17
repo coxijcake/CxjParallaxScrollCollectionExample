@@ -13,7 +13,7 @@ final class HashtagsViewController: UIViewController {
 	private let hashtagsVCPlaceholderView: UIView = .init()
 	
 	private lazy var hashtagsVC: CxjParallaxScrollCollection.ViewController = {
-		CxjParallaxViewControllerAssembler.vcWith(
+		CxjParallaxViewControllerAssembler.assembleWith(
 			layout: .init(
 				sectionHeight: 40,
 				interSectionSpacing: 10,
